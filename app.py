@@ -22,6 +22,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 bootstrap = Bootstrap(app)
+
+
 db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
